@@ -8,36 +8,37 @@ body {
 
 }
 
-h1{
-    margin: 15px;
+strong {
+    color: rgb(15, 71, 139);
+    margin: 240px;
     text-align: right;
     transform: translate(-15%, 30%);/*التباعد*/
-    color: rgb(19, 19, 127); /* لون العنوان */
+    position: relative;
+    top: 20px; /* ينزل النص للأسفل بمقدار 20 بكسل */
 
 }
-
 
 form {
     display:block;
     width: 50%;
-    height:400px ; /*طول اللوحة البيضاء*/
-    max-width: 420px;/* هنا عرض لوحة التسجيل البيضاء*/
-    margin: 20px auto; /*هنا المساحة بين بطاقة اللوحة وبين عنوان اللوحة*/
+    height:530px ; /*طول اللوحة البيضاء*/
+    max-width: 600px;/* هنا عرض لوحة التسجيل البيضاء*/
+    margin: 50px auto; /*هنا المساحة بين بطاقة اللوحة وبين عنوان اللوحة*/
     padding: 65px;/*هنا اذا اللوحة نحيفه او سمينة*/
-    border: 3px solid #ccc;
-    border-radius: 60px;/*هنا تطلع اللوحة مربع او دائرة*/
+    border: 4px solid #ccc;/*لون حدود اطار الحقل الابيض*/
+    border-radius: 50px;/*هنا تطلع اللوحة مربع او دائرة*/
     background-color: #f9f9f9;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     float:right;/*هنا اتجاه الحقل الابيض بشكل عام */
-    margin: 1%;
+    margin: 2%;/*تباعد الحقل الابيض*/
     
 }
 
 input {
     width: 95%;
-    padding: 8px;
+    padding: 8px;/*حجم حقل الادخال الابيض*/
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;/*لون اطار حقل الادخال الابيض*/
     border-radius: 5px;
     box-sizing: border-box;
     text-align: right;
@@ -48,11 +49,12 @@ button {
     background-color: blue;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     width: 40%;
     float: calc(); /*اتجاه محاذاة الزر*/
+    display: flexbox;
 
 }
 
