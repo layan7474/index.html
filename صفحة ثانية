@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <br>
+    <div class="text-center">  <br><br>
+        <h1>اتصل بنا</h1>
+    </div>  <br> <hr>
+
+    <div class="container">
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <div class="form-container">
+                    <h2>اتصل بنا</h2>
+                    <br>
+                    <form id="contactForm">
+                        <label for="name">الاسم واللقب</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                        <br>
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" class="form-control">
+                        <br>
+                        <label for="role">أنا</label>
+                        <select id="role" name="role" class="form-control">
+                            <option value="" disabled selected>-- اختر صفة --</option>
+                            <option value="طالب">طالب</option>
+                            <option value="باحث">باحث</option>
+                            <option value="محقق">محقق</option>
+                            <option value="شركة">شركة</option>
+                            <option value="مؤسسة">مؤسسة</option>
+                            <option value="..صفة أخرى">..صفة أخرى</option>
+                        </select>
+                        <br>
+                        <label for="rol">نوع الرسالة</label>
+                        <select id="rol" name="rol" class="form-control">
+                            <option value="" disabled selected>-- اختر نوع الرسالة --</option>
+                            <option value="استفسار">استفسار</option>
+                            <option value="اتصال بقسم المبيعات">اتصال بقسم المبيعات</option>
+                            <option value="تقديم اقتراح">تقديم اقتراح</option>
+                            <option value="ابلاغ عن مشكلة">ابلاغ عن مشكلة</option>
+                            <option value="طلب آخر">طلب آخر</option>
+                        </select>
+                        <br>
+                        <label for="topic">موضوع الرسالة</label>
+                        <input type="text" id="topic" name="topic" class="form-control">
+                        <br>
+                        <label for="message">اترك لنا رسالتك</label>
+                        <textarea id="message" name="message" class="form-control"></textarea>
+                        <br>
+                        <button type="button" id="send" class="btn btn-primary">إرسال</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Location and Contact Section -->
+            <div class="col-md-6">
+                <div class="location-container">
+                    <h2>الموقع</h2>
+                    <div class="location">
+                        <h3>المملكة العربية السعودية</h3>
+                    </div>
+
+                    <div class="content">
+                        <br>
+                        <h2>بيانات التواصل</h2>
+                        <p><b>رضاؤكم هدفنا..</b> لذا نسعى للوصول إليكم في أي وقت وفي كل مكان</p>
+
+                        <div class="social-icons">
+                            <p><b>:يرجى المتابعة على</b></p>
+                            <a href="https://www.facebook.com/?locale=ar_AR"><img src="فيسبوك.jpeg" alt="فيسبوك"></a>
+                            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiYXIifQ%3D%3D%22%7D"><img src="تويتر.png" alt="تويتر"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Section -->
+        <div id="output" class="mt-5"></div>
+    </div>
+
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
