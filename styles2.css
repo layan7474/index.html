@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to right, #07cef15d, #feb47b9d);
+}
+
+.form-container, .location-container {
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 0px;
+    flex: 1;
+    border: 4px solid #ccc;/*لون حدود اطار الحقل الابيض*/
+
+}
+
+.text-center {
+    background: #ccc;
+    color: rgb(15, 71, 139);
+    padding: 1px;
+    border-radius: 0px;
+    flex: 1;
+    border: 10px solid #ccc;/*لون حدود اطار الحقل الابيض*/
+}
+
+hr {
+    height: 5px; /* سماكة الخط */
+    background-color: black; /* لون الخط */
+    border: none; /* إزالة الحدود الافتراضية */
+}
+
+.form-container {
+    text-align: right;
+}
+
+.location-container {
+    text-align: center;
+}
+
+.location h3 {
+    color: #f4b400;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    float: calc(); /*اتجاه محاذاة الزر*/
+    display: flexbox;
+}
+
+.container {
+    text-align: right;
+    top: 20%;
+}
+
+h1 {
+    color: white; /* تغيير لون النص إلى الأبيض */
+    text-align: center;
+    padding: 10px; /* إضافة بعض المساحة الداخلية */
+    border-radius: 5px; /* حواف مستديرة */
+}
+
+img {
+    width: 50px;
+}
+
+input {
+    width: 70%;
+    padding: 6px;/*حجم حقل الادخال الابيض*/
+    margin: 5px 0;
+    border: 1px solid #ccc;/*لون اطار حقل الادخال الابيض*/
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right;
+}

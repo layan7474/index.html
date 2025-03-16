@@ -78,4 +78,3 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(user ? `🔑 كلمة المرور الخاصة بك: ${user.password}` : "🚫 البريد الإلكتروني غير مسجل!");
     });
 });
-
