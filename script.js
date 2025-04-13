@@ -80,3 +80,32 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(user ? "\uD83D\uDD11 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631 \u0627\u0644\u062E\u0627\u0635\u0629 \u0628\u0643: ".concat(user.password) : "🚫 البريد الإلكتروني غير مسجل!");
     });
 });
+     //زر الطقس
+  const apiKey = "26004d0fc2ea8a0ea67931b13c97cb67"; // ← احط مفتاح API هنا
+  document.getElementById("get-weather").addEventListener("click", async () => {
+  const city = document.getElementById("city-input").value.trim();
+  const result = document.getElementById("weather-result");
+
+  if (!city) {
+    result.textContent = "⚠️ من فضلك أدخل اسم المدينة.";
+    return;
+  }
+
+  try {
+    const res = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric&lang=ar`
+    );
+
+    const data = await res.json();
+
+    if (data.cod !== 200) {
+      result.textContent = "❌ لم يتم العثور على المدينة.";
+    } else {
+      const temp = data.main.temp;
+      const desc = data.weather[0].description;
+      result.textContent = `🌤️ الطقس في ${city}: ${desc} - ${temp}°C`;
+    }
+  } catch (error) {
+    result.textContent = "🚫 حدث خطأ أثناء جلب الطقس.";
+  }
+});

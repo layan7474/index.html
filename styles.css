@@ -3,7 +3,7 @@ body {
     text-align: right;/*هذا اتجاه النص بالصفحة كاملة*/
     background: linear-gradient(to right, #07cef15d, #feb47b9d);/*هذا لون خلفية الصفحة كاملة بشكل عام*/
     margin: 0;
-    height: 100px;
+    height: 100%;
     width: 100%;
 
 }
@@ -21,9 +21,9 @@ strong {
 form {
     display:block;
     width: 50%;
-    height:530px ; /*طول اللوحة البيضاء*/
+    height:620% ; /*طول اللوحة البيضاء*/
     max-width: 600px;/* هنا عرض لوحة التسجيل البيضاء*/
-    margin: 50px auto; /*هنا المساحة بين بطاقة اللوحة وبين عنوان اللوحة*/
+    margin: 50% auto; /*هنا المساحة بين بطاقة اللوحة وبين عنوان اللوحة*/
     padding: 65px;/*هنا اذا اللوحة نحيفه او سمينة*/
     border: 4px solid #ccc;/*لون حدود اطار الحقل الابيض*/
     border-radius: 50px;/*هنا تطلع اللوحة مربع او دائرة*/
@@ -65,7 +65,7 @@ button:hover {
 
 img{   
     width: 50%;
-    height: 100vh;
+    height: 120%;
     object-fit: cover;
     position: absolute;
     top: 0;
